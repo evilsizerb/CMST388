@@ -1,0 +1,24 @@
+// JavaScript Document
+
+//Select an image when clicked to view it in the main section
+const change = src => {
+    document.getElementById('largeImage').src = src
+}
+
+//Display captions when mouse is hovered over image
+function imageCaption(ic){
+	x = document.getElementById(ic).alt;
+	document.getElementById("caption").innerHTML = x;
+}
+
+
+//Display border on clicked image
+function photoFrame(clickedObject) {
+	idList = ["MountainSunset", "oceanSunset", "stoneSunset", "noonLake", "morningRiver"];
+	i = 0;
+	while (i < idList.length){ 
+		document.getElementById(idList[i]).style.border = "none";
+		i++;
+	}
+document.getElementById(clickedObject).style.border = "thick solid black"; 
+}
