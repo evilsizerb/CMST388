@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Creative Genius Web Design</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<!--Linked Javascript file-->
+<script src="js/image-gallery.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div class="row">
+		<div class="col-12">
+        		<h1>Creative Genius Web Design - Landscapes</h1>			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-12">
+            		<div id="thumbnails">
+            			<img src="img/imgOne.jpg" id="MountainSunset" width="19.375%" height="19.5%" onclick="change(this.src);photoFrame(this.id)" onmouseover="imageCaption(this.id);" alt="A moutnain range at sunset." />
+                		<img src="img/imgTwo.jpg" id="oceanSunset" width="19.375%" height="19.5%" onclick="change(this.src);photoFrame(this.id)" onmouseover="imageCaption(this.id);" alt="A sunset over the ocean in Hawaii."/>
+                		<img src="img/imgThree.jpg" id="stoneSunset" width="19.375%" height="19.5%" onclick="change(this.src);photoFrame(this.id)" onmouseover="imageCaption(this.id);" alt="A sunset overlooking British stone structures." />
+                		<img src="img/imgFour.jpg" id="noonLake" width="19.375%" height="19.5%" onclick="change(this.src);photoFrame(this.id)" onmouseover="imageCaption(this.id);" alt="An afternoon landscape consisting of rolling hills and a lake." />
+                		<img src="img/imgFive.jpg" id="morningRiver" width="19.375%" height="19.5%" onclick="change(this.src);photoFrame(this.id)" onmouseover="imageCaption(this.id);" alt="An early morning view of a mountain range overlooking a river." />     
+    			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-12">
+			<div id="mainImage">
+                		<img id="largeImage" src="img/imgOne.jpg" width="100%" height="100%" alt="A moutnain range at sunset.">
+    			</div>
+		</div>
+	</div>
+	
+   	<div class="row">
+		<div class="col-12">
+			<div class="caption">
+               			<p id="caption"></p>
+    			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
